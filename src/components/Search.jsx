@@ -71,7 +71,6 @@ class Search extends Component {
             </div>
           ))
         }
-        { albums.map((a) => console.log(a.artistName === name)) }
       </div>
     );
   }
