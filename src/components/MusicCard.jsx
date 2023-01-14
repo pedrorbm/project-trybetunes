@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export class MusicCard extends Component {
+class MusicCard extends Component {
   render() {
     const { arrayMusic } = this.props;
 

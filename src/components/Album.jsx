@@ -35,7 +35,7 @@ class Album extends Component {
         <img src={ image } alt="Imagem do álbum" />
         <p data-testid="album-name">{album}</p>
         <p data-testid="artist-name">{artist}</p>
-        { musics.map((m, i) => <MusicCard key={ i } arrayMusic={ m } />) }
+        { musics.map((music, i) => <MusicCard key={ i } arrayMusic={ music } />) }
       </div>
     );
   }
