@@ -27,6 +27,19 @@ class MusicCard extends Component {
     }
   };
 
+  handleChange = async () => {
+    const { arrayMusic } = this.props;
+
+    this.setState({ isLoading: true });
+
+    try {
+      await favoriteSongsAPI.removeSong(arrayMusic);
+      this.setState({ isLoading: false });
+    } catch {
+      this.setState({ isLoading: false });
+    }
+  };
+
   render() {
     const { arrayMusic, arrayFavorites } = this.props;
     const { isLoading } = this.state;
@@ -53,10 +66,11 @@ class MusicCard extends Component {
             defaultChecked={ arrayFavorites
               .some((e) => e.trackId === arrayMusic.trackId) }
             onClick={ this.handleClick }
+            onChange={ this.handleChange }
           />
           Favorita
         </label>
-        { isLoading ? <Loading /> : undefined }
+        { isLoading && <Loading /> }
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
+import Loading from './Loading';
 
 class Search extends Component {
   state = {
@@ -9,6 +10,7 @@ class Search extends Component {
     name: '',
     albums: [],
     notFoundAlbum: false,
+    isLoading: false,
   };
 
   searchInput = ({ target }) => {
@@ -19,19 +21,28 @@ class Search extends Component {
 
   searchAlbums = async (event) => {
     event.preventDefault();
-    const { search } = this.state;
-    const result = await searchAlbumsAPI(search);
 
-    this.setState({
-      search: '',
-      name: search,
-      albums: result,
-      notFoundAlbum: result.length < 1,
-    });
+    this.setState({ isLoading: true });
+
+    const { search } = this.state;
+
+    try {
+      const result = await searchAlbumsAPI(search);
+
+      this.setState({
+        search: '',
+        name: search,
+        albums: result,
+        notFoundAlbum: result.length < 1,
+        isLoading: false,
+      });
+    } catch {
+      this.setState({ isLoading: false });
+    }
   };
 
   render() {
-    const { search, albums, notFoundAlbum, name } = this.state;
+    const { search, albums, notFoundAlbum, name, isLoading } = this.state;
 
     return (
       <div data-testid="page-search">
@@ -53,6 +64,7 @@ class Search extends Component {
 
           </button>
         </form>
+        { isLoading && <Loading /> }
         { notFoundAlbum ? <p>Nenhum álbum foi encontrado</p> : '' }
         { albums.length >= 1 ? <p>{ `Resultado de álbuns de: ${name}` }</p> : '' }
         {
