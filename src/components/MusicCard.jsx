@@ -8,35 +8,23 @@ class MusicCard extends Component {
     isLoading: false,
   };
 
-  handleClick = async () => {
+  handleClick = async ({ target }) => {
     const { arrayMusic } = this.props;
 
     this.setState({
       isLoading: true,
     });
 
-    try {
+    if (target.checked === true) {
       await favoriteSongsAPI.addSong(arrayMusic);
       this.setState({
         isLoading: false,
       });
-    } catch {
+    } else {
+      await favoriteSongsAPI.removeSong(arrayMusic);
       this.setState({
         isLoading: false,
       });
-    }
-  };
-
-  handleChange = async () => {
-    const { arrayMusic } = this.props;
-
-    this.setState({ isLoading: true });
-
-    try {
-      await favoriteSongsAPI.removeSong(arrayMusic);
-      this.setState({ isLoading: false });
-    } catch {
-      this.setState({ isLoading: false });
     }
   };
 
@@ -66,7 +54,6 @@ class MusicCard extends Component {
             defaultChecked={ arrayFavorites
               .some((e) => e.trackId === arrayMusic.trackId) }
             onClick={ this.handleClick }
-            onChange={ this.handleChange }
           />
           Favorita
         </label>
