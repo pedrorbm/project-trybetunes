@@ -1,0 +1,53 @@
+.containerProfile {
+  display: flex;
+  flex-flow: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E6E8EA;
+}
+
+.imgProfile {
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+  position: relative;
+  top: 30%;
+  left: 8%;
+}
+
+.containerImgPerfil {
+  height: 180px;
+  width: 79vw;
+  background: linear-gradient(123.66deg, #003BE5 12.08%, #00D5E2 86.52%);
+}
+
+.userInformation {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding-left: 35%;
+  padding-top: 2%;
+  gap: 25px;
+  height: 71.35vh;
+}
+
+.description {
+  text-align: justify;
+  width: 350px;
+}
+
+.btnProfile {
+  background-color: #003BE5;
+  border-color: #003BE5;
+  border-radius: 100px;
+  width: 152px;
+  height: 40px;
+  color: white;
+}
+
+.linkProfile {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+}

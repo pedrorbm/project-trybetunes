@@ -1,0 +1,13 @@
+.containerLoadingMinor {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loadingSpinMinor {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    top: 70%;
+    left: 20%;
+}

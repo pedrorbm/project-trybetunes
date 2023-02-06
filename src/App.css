@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto" , sans-serif;
+  box-sizing: border-box;
+}
+
+@import './css/Login.css' ;
+
+@import './css/Header.css' ;
+
+@import './css/Search.css' ;
+
+@import './css/Album.css' ;
+
+@import './css/MusicCard.css' ;
+
+@import './css/Loading.css' ;
+
+@import './css/Favorites.css' ;
+
+@import './css/Profile.css' ;
+
+@import './css/ProfileEdit.css' ;
+
+@import './css/Loading.css' ;
+
+@import './css/NotFound.css' ;

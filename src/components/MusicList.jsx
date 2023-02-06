@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import * as favoriteSongsAPI from '../services/favoriteSongsAPI';
 
-class MusicCard extends Component {
-  handleClick = async ({ target }) => {
-    const { arrayMusic } = this.props;
-
-    if (target.checked === true) {
-      await favoriteSongsAPI.addSong(arrayMusic);
-    } else {
-      await favoriteSongsAPI.removeSong(arrayMusic);
-    }
-  };
-
+class MusicList extends Component {
   render() {
-    const { arrayMusic, arrayFavorites } = this.props;
+    const { arrayMusic, arrayFavorites, handleClick } = this.props;
 
     return (
       <div className="musicCardFlex">
@@ -33,7 +22,7 @@ class MusicCard extends Component {
           id={ arrayMusic.trackId }
           defaultChecked={ arrayFavorites
             .some((e) => e.trackId === arrayMusic.trackId) }
-          onClick={ this.handleClick }
+          onClick={ handleClick }
         />
         <label
           data-testid={ `checkbox-music-${arrayMusic.trackId}` }
@@ -44,8 +33,8 @@ class MusicCard extends Component {
   }
 }
 
-export default MusicCard;
+export default MusicList;
 
-MusicCard.propTypes = {
+MusicList.propTypes = {
   arrayMusic: PropTypes.array,
 }.isRequired;

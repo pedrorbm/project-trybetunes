@@ -1,0 +1,33 @@
+.containerFavorites {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.musics {
+  display: flex;
+}
+
+.textMusicsFavorites {
+  display: flex;
+  background-color: blue;
+  width: 79vw;
+  height: 180px;
+  background: linear-gradient(123.66deg, #003BE5 12.08%, #00D5E2 86.52%);
+  justify-content: center;
+  align-items: center;
+}
+
+.textMusicsFavorites h2 {
+  color: white;
+}
+
+.renderMusicsFavorites {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  padding-right: 25%;
+  background-color: #E6E8EA;
+  height: 71.35vh;
+  overflow-y: scroll;
+}

@@ -1,0 +1,40 @@
+.containerPerfilEdit {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E6E8EA
+}
+
+.inputLinkImage {
+  position: relative;
+  top: 50%;
+  left: -12.5%;
+  background-color: #E6E8EA;
+  width: 180px;
+  height: 40px;
+}
+
+.inputLinkImage::placeholder {
+  color: black;
+  text-align: center;
+  font-size: medium;
+}
+
+.inputBorder {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 288px;
+  height: 37px;
+  margin-top: 8px;
+}
+
+.inputBorder::placeholder {
+  color: black;
+}
+
+.textboxEdit {
+  width: 350px;
+  height: 70px;
+  resize: none;
+}

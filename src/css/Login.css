@@ -1,0 +1,67 @@
+.loginContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/planoFundo.png');
+  background-position: center;
+  background-color:blue
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage {
+  width: 60%;
+  height: 450px;
+  background-color: white;
+  box-shadow: 0px 0px 26px rgba(68, 73, 85, 0.2);
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputConatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImg {
+  padding-bottom: 50px;
+}
+
+.inputLogin {
+  width: 32vw;
+  height: 30px;
+  border: 1px solid blue;
+  border-radius: 100px;
+  text-align: center;
+  font-family: Roboto , sans-serif;
+  font-size: 16px;
+}
+
+.btnLogin {
+  margin-top: 8px;
+  width: 32vw;
+  height: 31px;
+  background-color: blue;
+  border-color: blue;
+  border-radius: 100px;
+  color: white;
+  font-family: Roboto , sans-serif;
+  font-size: 16px;
+}

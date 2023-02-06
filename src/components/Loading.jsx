@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import loadingSpin from '../images/loadingSpin.svg';
 
 class Loading extends Component {
   render() {
     return (
-      <h1>Carregando...</h1>
+      <div className="containerLoading">
+        <img className="loadingSpin" src={ loadingSpin } alt="imagem carregando" />
+      </div>
     );
   }
 }

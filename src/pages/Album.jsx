@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header';
+import Header from '../components/Header';
 import getMusics from '../services/musicsAPI';
-import MusicCard from './MusicCard';
-import Loading from './Loading';
+import MusicCard from '../components/MusicCard';
+import Loading from '../components/Loading';
 import * as favoriteSongsAPI from '../services/favoriteSongsAPI';
 
 class Album extends Component {
@@ -41,23 +41,33 @@ class Album extends Component {
 
   render() {
     const { artist, album, image, musics, favorites, isLoading } = this.state;
+    if (isLoading) {
+      return <Loading />;
+    }
 
     return (
-      <div data-testid="page-album">
+      <div className="containerAlbum" data-testid="page-album">
         <Header />
-        { isLoading && <Loading /> }
-        <img src={ image } alt="Imagem do álbum" />
-        <p data-testid="album-name">{album}</p>
-        <p data-testid="artist-name">{artist}</p>
-        {
-          musics.map((m, i) => (
-            <MusicCard
-              key={ i }
-              arrayMusic={ m }
-              arrayFavorites={ favorites }
-            />
-          ))
-        }
+        <div className="containerImageMusic">
+          <div className="imageAlbum">
+            <img className="imgAlbumPosition" src={ image } alt="Imagem do álbum" />
+            <div>
+              <h2 data-testid="album-name">{ album }</h2>
+              <p data-testid="artist-name">{ artist }</p>
+            </div>
+          </div>
+          <div className="musics">
+            {
+              musics.map((m, i) => (
+                <MusicCard
+                  key={ i }
+                  arrayMusic={ m }
+                  arrayFavorites={ favorites }
+                />
+              ))
+            }
+          </div>
+        </div>
       </div>
     );
   }

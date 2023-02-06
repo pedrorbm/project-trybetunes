@@ -1,0 +1,115 @@
+header {
+  background-color: white;
+  width: 21%;
+  height: 100vh;
+}
+
+.logoHeader {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 30%;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 34%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.linksContainer:hover {
+  background-color: blue;
+}
+
+.link:hover {
+  color: white;
+}
+
+.imgPerfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.iconsHeader {
+  width: 25px;
+  height: 25px;
+}
+
+.material-icons {
+  display: none
+}
+
+@media (max-width: 670px) {
+  
+  .linksContainer {
+    background-color: white;
+    justify-content: flex-start;
+    padding-left: 10%;
+  }
+
+  /* .iconsHeader {
+    
+  }
+
+  .imgPerfil {
+    
+  } */
+
+  .testeee {
+    background-color: white;
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    display: none;
+  }
+
+  .user {
+    background-color: white;
+    padding-top: 180%;
+  }
+
+  header {
+    width: 100%;
+    height: 64px;
+  }
+
+  .logoHeader {
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+    height: 100%;
+  }
+
+  .imgLogo {
+    width: 100px;
+    height: 55px;
+    margin-left: 3%;
+  }
+
+  .material-icons {
+    display: contents;
+    cursor: pointer;
+  }
+
+}

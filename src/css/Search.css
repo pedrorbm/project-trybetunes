@@ -1,0 +1,182 @@
+.containerSearch {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+.containerSearchResult {
+  width: 79%;
+}
+
+.formSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/planoFundo.png');
+  background-size: cover;
+  background-color: blue;
+  height: 180px;
+}
+
+.inputSearch {
+  width: 350px;
+  height: 40px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 23px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.inputSearch::placeholder {
+  color: white;
+  padding-left: 10px;
+}
+
+.btnSearch {
+  width: 114px;
+  height: 40px;
+  border-radius: 23px;
+  background-color: #00d5e2;
+  color: white;
+  border-color: #00D5E2;
+  margin-left: 10px;
+}
+
+.renderMusic {
+  background-color: #EFF3F9;
+  height: 71.35vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.phraseResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cardMusic {
+  border: 2px solid gray;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.albumName {
+  height: 60px;
+  overflow-y: scroll;
+}
+
+.results {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* width */
+.albumName::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+/* Track */
+.albumName::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.2);
+  border-radius: 4px;
+}
+
+/* Handle */
+.albumName::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.albumName::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.albumName::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.linkAcess {
+  text-decoration: none;
+  color: white;
+}
+
+.btnAcess {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: blue;
+  border-radius: 20px;
+  border-color: blue;
+}
+
+.imgCard {
+  margin-bottom: 10px;
+}
+
+.resultAlbum {
+  font-family: 'Epilogue', sans-serif;
+  font-style: italic;
+  color: blue;
+  font-size: 20px;
+}
+
+@media (max-width: 670px) {
+
+  .containerSearch {
+    display: block;
+    width: 100%;
+  }
+  
+  .containerSearchResult {
+    width: 100%;
+  }
+
+  .renderMusic {
+    overflow-y: visible;
+  }
+
+  .btnSearch {
+    width: 200px;
+    height: 40px;
+  }
+
+  .results {
+    width: 100%;
+  }
+
+  .inputSearch {
+    width: 50vw;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .inputSearch::placeholder {
+    text-align: center;
+  }
+
+  .formSearch {
+    flex-flow: column;
+  }
+
+  .btnSearch {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 50vw;
+  }
+}

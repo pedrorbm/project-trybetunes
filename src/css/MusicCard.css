@@ -1,0 +1,30 @@
+.musicCardFlex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.musicCardFlex input {
+    display: none;
+}
+
+.musicCardFlex input + label::before {
+    content: '';
+    background-image: url('../images/checkFavorite.png');
+    width: 22px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.musicCardFlex input:checked + label::before {
+    content: '';
+    background-image: url('../images/checkFavoriteTrue.png');
+    width: 22px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}

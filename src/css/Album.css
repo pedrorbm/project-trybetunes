@@ -1,0 +1,37 @@
+.containerAlbum {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerImageMusic {
+    width: 79%;
+}
+
+.imageAlbum {
+    display: flex;
+    height: 180px;
+    background: linear-gradient(123.66deg, #003BE5 12.08%, #00D5E2 86.52%);
+    justify-content: center;
+    align-items: center;
+}
+
+.musics {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    background-color: #E6E8EA;
+    height: 71.35vh;
+    overflow-y: scroll;
+    padding-right: 50px;
+}
+
+.imgAlbumPosition {
+    position: relative;
+    top: 40%;
+    left: -13%;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
