@@ -61,21 +61,19 @@ class Profile extends Component {
 
               </p>
             </div>
-            <div className="divBtn">
-              <button
-                className="btnProfile"
-                type="button"
+            <button
+              className="btnProfile"
+              type="button"
+            >
+              <Link
+                className="linkProfile"
+                to="profile/edit"
               >
-                <Link
-                  className="linkProfile"
-                  to="profile/edit"
-                >
-                  EDITAR PERFIL
+                EDITAR PERFIL
 
-                </Link>
+              </Link>
 
-              </button>
-            </div>
+            </button>
           </div>
         </div>
       </div>

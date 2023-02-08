@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class MusicList extends Component {
   render() {
-    const { arrayMusic, arrayFavorites, handleClick } = this.props;
+    const { arrayMusic, arrayFavorites } = this.props;
 
     return (
       <div className="musicCardFlex">
@@ -16,18 +16,20 @@ class MusicList extends Component {
           <code>audio</code>
           .
         </audio>
-        <input
-          type="checkbox"
-          name="favorite"
-          id={ arrayMusic.trackId }
-          defaultChecked={ arrayFavorites
-            .some((e) => e.trackId === arrayMusic.trackId) }
-          onClick={ handleClick }
-        />
         <label
           data-testid={ `checkbox-music-${arrayMusic.trackId}` }
           htmlFor={ arrayMusic.trackId }
-        />
+        >
+          <input
+            type="checkbox"
+            name="favorite"
+            id={ arrayMusic.trackId }
+            defaultChecked={ arrayFavorites
+              .some((e) => e.trackId === arrayMusic.trackId) }
+            onClick={ this.handleClick }
+          />
+
+        </label>
       </div>
     );
   }
