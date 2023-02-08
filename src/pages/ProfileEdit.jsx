@@ -111,18 +111,16 @@ class ProfileEdit extends Component {
                 onChange={ this.handleChange }
               />
             </div>
-            <div className="divBtn">
-              <button
-                className="btnProfile"
-                data-testid="edit-button-save"
-                type="submit"
-                onClick={ this.handleSubmit }
-                disabled={ save }
-              >
-                SALVAR
+            <button
+              className="btnProfile"
+              data-testid="edit-button-save"
+              type="submit"
+              onClick={ this.handleSubmit }
+              disabled={ save }
+            >
+              SALVAR
 
-              </button>
-            </div>
+            </button>
           </div>
         </form>
       </div>

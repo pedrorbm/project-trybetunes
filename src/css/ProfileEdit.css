@@ -63,4 +63,10 @@
     height: 30px;
   }
 
+  .btnProfile {
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+  }
+
 }
