@@ -61,10 +61,11 @@
       width: 120px;
       height: 120px;
       position: initial;
+      margin-left: 2%;
     }
 
     .imageAlbum {
-      gap: 10%;
+      gap: 8%;
       display: flex;
       justify-content: center;
       align-items: center;
