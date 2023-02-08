@@ -66,26 +66,21 @@ header {
     padding-left: 10%;
   }
 
-  /* .iconsHeader {
-    
-  }
-
-  .imgPerfil {
-    
-  } */
-
-  .testeee {
+  .headerContainer {
     background-color: white;
     position: fixed;
-    width: 35%;
+    width: 40%;
     height: 100%;
     top: 0;
     display: none;
+    z-index: 10;
   }
 
   .user {
     background-color: white;
-    padding-top: 180%;
+    padding-top: 0;
+    height: 100vh;
+    margin-top: 7%;
   }
 
   header {
@@ -110,6 +105,10 @@ header {
   .material-icons {
     display: contents;
     cursor: pointer;
+  }
+
+  .imgPerfil {
+    margin-right: 5px;
   }
 
 }

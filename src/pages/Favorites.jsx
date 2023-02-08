@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
-import MusicCard from '../components/MusicCard';
 import Loading from '../components/Loading';
 import * as favoriteSongsAPI from '../services/favoriteSongsAPI';
 import MusicList from '../components/MusicList';

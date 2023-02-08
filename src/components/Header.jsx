@@ -22,7 +22,7 @@ class Header extends Component {
   }
 
   clickMenu = () => {
-    const menu = document.querySelector('.testeee');
+    const menu = document.querySelector('.headerContainer');
     if (menu.style.display === 'none') {
       menu.style.display = 'block';
     } else {
@@ -46,7 +46,7 @@ class Header extends Component {
             <i className="material-icons">menu</i>
           </div>
         </div>
-        <div className="testeee">
+        <div className="headerContainer">
           <div className="linksContainer">
             <img className="iconsHeader" src={ lupaIcon } alt="ícone da lupa" />
             <Link

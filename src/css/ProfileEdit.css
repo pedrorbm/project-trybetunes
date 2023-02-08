@@ -38,3 +38,29 @@
   height: 70px;
   resize: none;
 }
+
+@media (max-width: 670px) {
+    
+  .containerPerfilEdit {
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .containerImgPerfil {
+    flex-flow: column;
+    gap: 5px;
+  }
+
+  .inputLinkImage {
+    position: initial;
+    width: 180px;
+    height: 30px;
+  }
+
+}

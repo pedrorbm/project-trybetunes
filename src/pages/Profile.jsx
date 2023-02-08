@@ -34,7 +34,7 @@ class Profile extends Component {
     return (
       <div data-testid="page-profile" className="containerProfile">
         <Header />
-        <div>
+        <div className="containerSubProfile">
           <div className="containerImgPerfil">
             <img
               className="imgProfile"
@@ -61,13 +61,21 @@ class Profile extends Component {
 
               </p>
             </div>
-            <button
-              className="btnProfile"
-              type="button"
-            >
-              <Link className="linkProfile" to="profile/edit">EDITAR PERFIL</Link>
+            <div className="divBtn">
+              <button
+                className="btnProfile"
+                type="button"
+              >
+                <Link
+                  className="linkProfile"
+                  to="profile/edit"
+                >
+                  EDITAR PERFIL
 
-            </button>
+                </Link>
+
+              </button>
+            </div>
           </div>
         </div>
       </div>

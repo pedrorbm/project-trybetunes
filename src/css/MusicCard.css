@@ -28,3 +28,12 @@
     display: inline-block;
     cursor: pointer;
 }
+
+@media (max-width: 670px) {
+    
+  .musicCardFlex {
+    width: 90%;
+    gap: 20px;
+    justify-content: space-between;
+  } 
+}
