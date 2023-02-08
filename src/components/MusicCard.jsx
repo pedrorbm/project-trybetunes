@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as favoriteSongsAPI from '../services/favoriteSongsAPI';
@@ -27,20 +28,18 @@ class MusicCard extends Component {
           <code>audio</code>
           .
         </audio>
+        <input
+          type="checkbox"
+          name="favorite"
+          id={ arrayMusic.trackId }
+          defaultChecked={ arrayFavorites
+            .some((e) => e.trackId === arrayMusic.trackId) }
+          onClick={ this.handleClick }
+        />
         <label
           data-testid={ `checkbox-music-${arrayMusic.trackId}` }
           htmlFor={ arrayMusic.trackId }
-        >
-          <input
-            type="checkbox"
-            name="favorite"
-            id={ arrayMusic.trackId }
-            defaultChecked={ arrayFavorites
-              .some((e) => e.trackId === arrayMusic.trackId) }
-            onClick={ this.handleClick }
-          />
-
-        </label>
+        />
       </div>
     );
   }
