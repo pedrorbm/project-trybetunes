@@ -1,13 +1,49 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Explicação do projeto:
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Foi implementado uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas utilizando uma API, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada. Nessa aplicação o usuário é capaz de:
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+- Fazer login.
+- Pesquisar por uma banda ou artista.
+- Listar os álbuns disponíveis dessa banda ou artista.
+- Visualizar as músicas de um álbum selecionado.
+- Reproduzir prévia das músicas deste álbum.
+- Favoritar e desfavoritar músicas.
+- Ver a lista de músicas favoritas.
+- Ver o perfil da pessoa logada.
+- Editar o perfil da pessoa logada, incluindo foto, nome de usuário e descrição.
+  
+Obs: Esse projeto não utiliza banco de dados, apenas o local storage do navegador.
+
+# Conhecimento:
+
+- Utilizar os ciclos de vida de um componente React.
+
+- Fazer requisições e consumir dados vindos de uma API.
+
+- Utilizar a função setState de forma a garantir que um determinado código só é executado após o estado ser atualizado.
+
+- Utilizar o componente BrowserRouter corretamente.
+
+- Criar rotas, mapeando o caminho da URL com o componente correspondente.
+
+- Utilizar o Switch do React Router.
+
+- Usar o componente Redirect pra redirecionar para uma rota específica.
+
+- Criar links de navegação na aplicação com o componente Link.
+
+# Tecnologias utilizadas:
+- React, React Router, Javascript, CSS, HTML.
+
+# Orientações para uso:
+
+1. Clone o repositório
+- Use o comando: `git clone git@github.com:pedrorbm/project-trybetunes.git`
+- Entre na pasta do repositório que você acabou de clonar:
+  - `cd project-trybetunes`
+
+2. Instale as dependências
+- Use o comando: `npm install`
+
+3. Inicialize o projeto
+- Use o comando: `npm start`
