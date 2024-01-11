@@ -2,13 +2,14 @@ header {
   background-color: white;
   width: 21%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .logoHeader {
   display: flex;
   justify-content: center;
-  padding-top: 10%;
-  padding-bottom: 30%;
 }
 
 .linksContainer {
@@ -19,9 +20,9 @@ header {
 
 .user {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 34%;
 }
 
 .link {
@@ -43,10 +44,10 @@ header {
 }
 
 .imgPerfil {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 20px;
-  margin-right: 20px;
+  margin-bottom: 3%;
 }
 
 .iconsHeader {
@@ -55,7 +56,7 @@ header {
 }
 
 .material-icons {
-  display: none
+  display: none;
 }
 
 @media (max-width: 670px) {

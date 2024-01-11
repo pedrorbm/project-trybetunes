@@ -79,14 +79,14 @@ class Header extends Component {
 
             </Link>
           </div>
-          <div className="user">
-            <img
-              className="imgPerfil"
-              src={ image === '' ? perfil : image }
-              alt="imagem de perfil"
-            />
-            <h2 data-testid="header-user-name">{ user }</h2>
-          </div>
+        </div>
+        <div className="user">
+          <img
+            className="imgPerfil"
+            src={ image === '' ? perfil : image }
+            alt="imagem de perfil"
+          />
+          <h2 data-testid="header-user-name">{ user }</h2>
         </div>
       </header>
     );
